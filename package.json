@@ -1,5 +1,5 @@
 {
-  "name": "@highcorp/highcorp-ui",
+  "name": "@etiennelicheron/highcorp-ui",
   "version": "1.0.0",
   "description": "UI library for HighCorp",
   "main": "dist/highcorp-ui.umd.js",
