@@ -1,5 +1,5 @@
 {
-  "name": "@etiennelicheron/highcorp-ui",
+  "name": "@highcorpinc/highcorp-ui",
   "version": "1.0.0",
   "description": "UI library for HighCorp",
   "main": "dist/highcorp-ui.umd.js",
@@ -14,7 +14,11 @@
     "build": "vite build && tsc"
   },
 
-  "author": "",
+  "author": "EtienneLicheron",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HighCorpInc/Highcorp-ui.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^18.2.64",
@@ -27,6 +31,6 @@
     "react": "^18.2.0"
   },
   "publishConfig": {
-    "@etiennelicheron:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/HighCorpInc"
   }
 }
