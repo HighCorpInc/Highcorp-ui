@@ -17,7 +17,7 @@
   "author": "EtienneLicheron",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HighCorpInc/Highcorp-ui.git"
+    "url": "https://github.com/HighCorpInc/Highcorp-ui.git"
   },
   "license": "ISC",
   "devDependencies": {
@@ -31,6 +31,6 @@
     "react": "^18.2.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/HighCorpInc"
+    "registry": "https://npm.pkg.github.com"
   }
 }
