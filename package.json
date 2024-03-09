@@ -1,5 +1,5 @@
 {
-  "name": "@highcorpinc/highcorp-ui",
+  "name": "@highcorp/highcorp-ui",
   "version": "1.0.0",
   "description": "UI library for HighCorp",
   "main": "dist/highcorp-ui.umd.js",
@@ -14,7 +14,7 @@
     "build": "vite build && tsc"
   },
 
-  "author": "EtienneLicheron",
+  "author": "highcorp",
   "repository": {
     "type": "git",
     "url": "https://github.com/HighCorpInc/Highcorp-ui.git"
