@@ -19,6 +19,6 @@ jobs:
       - name: Build
         run: npm run build
       - name: Publish
-        run: echo ${{ secrets.NPM_TOKEN }} | npm login
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
