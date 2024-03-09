@@ -16,11 +16,8 @@ jobs:
           token: ${{ secrets.NPM_TOKEN }}
       - name: Install dependencies and build 🔧
         run: npm ci && npm run build
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
-          token: ${{ secrets.NPM_TOKEN }}
+      - name: login to NPM
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - name: Publish to NPM 🚀
         run: npm publish
         env:
