@@ -4,7 +4,7 @@ import { RadialMenuProps } from './RadialMenuProps.interface';
 
 import React from 'react';
 
-import './RadialMenuItem.scss'
+import './RadialMenu.scss'
 
 export class RadialMenu extends React.Component<RadialMenuProps, any> {
   private size: number;
