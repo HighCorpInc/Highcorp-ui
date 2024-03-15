@@ -1,12 +1,12 @@
 import { polarToCartesian } from './utils';
 import { svgDescribeArc } from './utils';
-import { RadialMenuItemProps } from './RadialMenuItemProps.interface';
+import { RadialMenuProps } from './RadialMenuProps.interface';
 
 import React from 'react';
 
 import './RadialMenuItem.scss'
 
-export class RadialMenuItem extends React.Component<RadialMenuItemProps, any> {
+export class RadialMenu extends React.Component<RadialMenuProps, any> {
   private size: number;
 
   constructor(props: any) {
