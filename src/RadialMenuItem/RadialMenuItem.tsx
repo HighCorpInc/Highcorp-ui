@@ -113,27 +113,6 @@ export class RadialMenuItem extends React.Component<RadialMenuItemProps, any> {
                 ['Z'].join(' ')
               }
             />
-            <path
-              id={`curve_${index + 1}`}
-              className='radial-menu-item-curve'
-              d={
-                [
-                  'M',
-                  polarToCartesian(X0, Y0, text_rad, halfSection * (index * 2 + 1))
-                    .x,
-                  polarToCartesian(X0, Y0, text_rad, halfSection * (index * 2 + 1))
-                    .y,
-                ].join(' ') +
-                svgDescribeArc(
-                  halfSize,
-                  halfSize,
-                  text_rad,
-                  1,
-                  halfSection * (index * 2 + 3),
-                  halfSection * (index * 2 + 1),
-                )
-              }
-            />
             {item.icon.type({ x: midCoord.x - 15, y: midCoord.y - 15, width: 30, height: 30, id: `icon_${index + 1}`})}
           </g>
             <text
