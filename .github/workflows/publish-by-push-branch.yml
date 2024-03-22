@@ -3,7 +3,7 @@ name: Publish Realease branch
 on:
     push:
         branches:
-            - 'realease'
+            - 'release'
 
 jobs:
   build:
