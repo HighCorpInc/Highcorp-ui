@@ -8,7 +8,7 @@ import { RadialMenuItem } from './RadialMenuItem/RadialMenuItem';
 export class RadialMenu extends React.Component<RadialMenuProps, any> {
   private size: number;
 
-  constructor(props: any) {
+  constructor(props: RadialMenuProps) {
     super(props);
     this.size = this.props.size;
   }
