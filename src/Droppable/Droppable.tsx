@@ -9,7 +9,7 @@ interface DroppableProps {
     children?: React.ReactNode;
 };
 
-const Droppable: FC<DroppableProps> = (props: DroppableProps) => {
+export const Droppable: FC<DroppableProps> = (props: DroppableProps) => {
     const { isOver, setNodeRef } = useDroppable({ id: props.id });
 
     const style: CSSProperties = {
@@ -18,10 +18,8 @@ const Droppable: FC<DroppableProps> = (props: DroppableProps) => {
     };
 
     return (
-        <div ref={setNodeRef} style={!!props.styleOver && isOver ? {...style, ...props.styleOver} : style}>
+        <div ref={setNodeRef} style={!!props.styleOver && isOver ? { ...style, ...props.styleOver } : style}>
             {props.children}
         </div>
     );
 };
-
-export default Droppable;

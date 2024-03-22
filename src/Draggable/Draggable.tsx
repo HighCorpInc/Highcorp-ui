@@ -8,7 +8,7 @@ interface DraggableProps {
     children?: React.ReactNode;
 }
 
-const Draggable: FC<DraggableProps> = (props: DraggableProps) => {
+export const Draggable: FC<DraggableProps> = (props: DraggableProps) => {
     const { attributes, listeners, setNodeRef, transform } = useDraggable({ id: props.id });
 
     const style: CSSProperties = {
@@ -24,6 +24,4 @@ const Draggable: FC<DraggableProps> = (props: DraggableProps) => {
             {props.children}
         </div>
     );
-}
-
-export default Draggable;
+};
