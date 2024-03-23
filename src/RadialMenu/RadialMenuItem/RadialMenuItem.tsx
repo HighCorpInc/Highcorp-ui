@@ -4,6 +4,8 @@ import { CSSProperties, useEffect, useState } from 'react';
 
 import { RadialMenuItemInterface } from './RadialMenuItem.interface';
 
+import { fetchNui } from '../../NuiUtils/fetchNui';
+
 export const RadialMenuItem = (props: RadialMenuItemInterface) => {
     const [isHover, setIsHover] = useState(false);
     const [isActive, setIsActive] = useState(false);
@@ -56,7 +58,7 @@ export const RadialMenuItem = (props: RadialMenuItemInterface) => {
     }
 
     const MenuItemClick = () => {
-        console.log(`Send NUI Message ${props.action} clicked`);
+        fetchNui(props.action);
         if (props.altLabel)
             setIsActive(!isActive);
     }

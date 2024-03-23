@@ -11,3 +11,7 @@ export { TrunkIcon } from "./Icons/Trunk";
 // DnD
 export { Droppable } from "./Dnd/Droppable";
 export { Draggable } from "./Dnd/Draggable";
+
+// Utils NUI
+export { fetchNui } from "./NuiUtils/fetchNui";
+export { isEnvBrowser } from "./NuiUtils/misc";
