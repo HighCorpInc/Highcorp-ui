@@ -4,7 +4,7 @@ export function format(first: string, middle: string, last: string): string {
   );
 }
 
-export function polarToCartesian(
+export function polarToCartesian (
   centerX: number,
   centerY: number,
   radius: number,
